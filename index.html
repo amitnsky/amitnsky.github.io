@@ -16,6 +16,9 @@
     <script type="text/javascript" src="assets/js/hidebib.js"></script>
     <!-- Custom styles for this template -->
     <style>
+    	*{
+    		outline: 0px solid red;
+    	}
         body {
             padding-top: 54px;
             position: relative;
@@ -26,7 +29,12 @@
                 padding-top: 56px;
             }
         }
-
+        .per_image{
+        	height: 185px;
+        	width: 185px;
+        	max-height: 185px;
+        	max-width: 185pxl
+        }
         body,
         td,
         th {
@@ -165,86 +173,87 @@
 
         </div>
         <!-- Projects -->
-        <div class="row" id="projects">
-            <h3>Academic Projects</h3>
-            <div class="col-sm-12" style="font-size:17px;">
-                <div class="project" id="data-interop">
-                	
-                    <span id="paperImg"><img src="assets/udacity.png" width="200px" /><br>Image Source: Udacity</span>
-
-                    <div id="pTitle">An Android App for watching Top Rated and Popular Movies on Smartphones.</div>
-                    <div id="course">Android Nanodegree Course Project</div>
-                    <div id="shareProject"><a target="_blank" href="https://github.com/amitnsky/Pop-Movies-Stage1">code</a> | <a href="javascript:toggleblock('data-interop-abs1')">description</a> 
-                    | <a target="_blank" href="https://github.com/amitnsky/Pop-Movies-Stage1">snapshot</a>
-                    </div>
-
-
-                    <br><br><br><br><br><br><br>
-                    <div id="data-interop-abs1" class="abstract">
-                        Project Description: <br>
-                        <ul>
-                            <li>Developed fully functional android application for watching details of movies and list of top rated and popular movies.</li>
-                            <li>Integrated Rest API requests of <a target="_blank" href="www.themoviedb.org">themoviedb.org</a> and used Volley for Network Requests, Picasso for caching and loading thumbnails.</li>
-                            <li>Integrated Android Architechre Components for maintaining local database of Favourite Moivies, could be marked by user.</li>
-                        </ul>
-                    </div>
-                </div>
-
-            	<div class="project" id="data-interop" style="margin-top: 30px;">
-
-                    <span id="paperImg"><img src="assets/dict.jpg" width="200px" /><br>Image Source: Project</span>
-
-                    <div id="pTitle">An Android App for looking English Words on Smartphones (Dictionary).</div>
-                    <div id="course">Android Personal Project</div>
-                    <div id="shareProject"><a target="_blank" href="https://github.com/amitnsky/dictionary">code</a> | <a href="javascript:toggleblock('data-interop-abs2')">description</a> | <a target="_blank" href="https://github.com/amitnsky/dictionary">snapshot</a>
-                    </div>
-
-                    <br><br><br><br><br><br><br>
-                    <div id="data-interop-abs2" class="abstract">
-                        Project Description: <br>
-                        <ul>
-                            <li>Developed fully functional android application for watching details of words and performing search queries.</li>
-                            <li>Integrated Rest API requests of <a target="_blank" href="https://developer.oxforddictionaries.com/">Oxford Online Dictionary</a> and used Core Java Networking library for Network Requests.</li>
-                            <li>Integrated Android Content Provider for maintaining local database of Favourite Words and History.</li>
-                        </ul>
-                    </div>
+		<h3>Academic Projects</h3>
+		<!--Project 1 -->
+        <div class="row" id="data-interop" style="font-size:17px;">
+        	<div class="col-sm-3">
+            	<span id="paperImg"><img class="img-responsive per_image" src="assets/udacity.png" /><br>Image Source: Project</span>
+			</div>
+			<div class="col-sm-9"><br>
+            	<div id="pTitle">An Android App for watching Top Rated and Popular Movies on Smartphones.</div>
+            	<div id="course">Android Nanodegree Course Project</div>
+            	<div id="shareProject"><a target="_blank" href="https://github.com/amitnsky/Pop-Movies-Stage1">code</a> | <a href="javascript:toggleblock('data-interop-abs1')">description</a> 
+            	| <a target="_blank" href="https://github.com/amitnsky/amitnsky.github.io/tree/master/assets/snapshot/snapshot-movies">snapshot</a>
             	</div>
             </div>
         </div>
-
-        <div class="row" id="acads">
-            <h3>Academics</h3>
-            <div class="col-sm-12" style="font-size:17px;">
-
-
-                <div class="project" id="btech">
-                    <br>
-                    <span id="paperImg"><img src="assets/degree.png" width="200px" /></span>
-
-                    <div id="pTitle">B.Tech. [2016 - Present]<br><b>National Institute of Technology Bhopal</b>, India</div>
-                    <div id="course"><b>Specialization:</b> Computer Science Engineering</div>
-                    <div id="authors">CGPA: 8.41</div>
-
-                </div><br><br><br><br>
-
-                <div class="project" id="he">
-
-                    <span id="paperImg"><img src="assets/dakshana.png" width="200px" /></span>
-                    <div id="pTitle">Higher Secondary [2014 - 2016]<br><b>Jawahar Navodaya Vidyalaya - Dakshana, Lucknow</b>, India</div>
-                    <div id="course"><b>Specialization:</b> PCM</div>
-                    <div id="authors">Percentage: 92 % </div>
-
-                </div><br><br><br><br>
-
-				<div class="project" id="he">
-
-                    <span id="paperImg"><img src="assets/jnv.jpg" width="200px" /></span>
-                    <div id="pTitle">Secondary [2012 - 2014]<br><b>Jawahar Navodaya Vidyalaya, Jaunpur</b>, India</div>
-                    <div id="authors">CGPA: 10 </div>
-
+        <div class="row" style="overflow: auto;font-size:17px;">
+            <div id="data-interop-abs1" class="abstract">
+                Project Description: <br>
+                <ul>
+                    <li>Developed fully functional android application for watching details of movies and list of top rated and popular movies.</li>
+                    <li>Integrated Rest API requests of <a target="_blank" href="https://www.themoviedb.org">themoviedb.org</a> and used Volley for Network Requests, Picasso for caching and loading thumbnails.</li>
+                    <li>Integrated Android Architechre Components for maintaining local database of Favourite Moivies, could be marked by user.</li>
+                </ul>
+            </div>
+    	</div>
+		<!--Project 2 -->
+        <div class="row" id="data-interop" style="overflow: auto; font-size:17px;">
+        	<div class="col-sm-3">
+            	<span id="paperImg"><img class="img-responsive per_image" src="assets/dict.jpg" /><br>Image Source: Project</span>
+			</div>
+			<div class="col-sm-9"><br>
+                <div id="pTitle">An Android App for looking English Words on Smartphones (Dictionary).</div>
+                <div id="course">Android Personal Project</div>
+                <div id="shareProject"><a target="_blank" href="https://github.com/amitnsky/dictionary">code</a> | <a href="javascript:toggleblock('data-interop-abs2')">description</a> | <a target="_blank" href="https://github.com/amitnsky/amitnsky.github.io/tree/master/assets/snapshot/snapshot-dictionary">snapshot</a>
                 </div>
             </div>
         </div>
+        <div class="row" style="font-size:17px;"">
+            <div id="data-interop-abs2" class="abstract">
+                Project Description: <br>
+                <ul>
+                   	<li>Developed fully functional android application for watching details of
+                   	words and performing search queries.</li>
+                    <li>Integrated Rest API requests of <a target="_blank" href="https://developer.oxforddictionaries.com/">Oxford Online Dictionary</a> and used Core Java Networking library for Network Requests.</li>
+                    <li>Integrated Android Content Provider for maintaining local database of Favourite Words and History.</li>
+                </ul>
+            </div>
+    	</div>
+    	<!-- End Projects -->
+
+    	<!--Academics-->
+    	<h3>Academics</h3>
+        <div class="row" id="acads" style="font-size:17px;">
+            <div class="col-sm-3" id="btech">
+                <span id="paperImg"><img class="img img-responsive per_image" src="assets/degree.png"/></span>
+            </div>
+            <div class="col-sm-9">
+                <div id="pTitle">B.Tech. [2016 - Present]<br><b>National Institute of Technology Bhopal</b>, India</div>
+                <div id="course"><b>Specialization:</b> Computer Science Engineering</div>
+                <div id="authors">CGPA: 8.41</div>
+            </div>
+        </div>
+		<div class="row" id="acads" style="font-size:17px;">
+            <div class="col-sm-3" id="he">
+				<span id="paperImg"><img class="img img-responsive per_image" src="assets/dakshana.png"/></span>
+            </div>
+            <div class="col-sm-9">
+                <div id="pTitle">Higher Secondary [2014 - 2016]<br><b>Jawahar Navodaya Vidyalaya - Dakshana, Lucknow</b>, India</div>
+                <div id="course"><b>Specialization:</b> PCM</div>
+                <div id="authors">Percentage: 92 % </div>
+            </div>
+		</div>
+		<div class="row" id="acads" style="font-size:17px;">
+            <div class="col-sm-3" id="he">
+                <span id="paperImg"><img class="img img-responsive per_image" src="assets/jnv.jpg"/></span>
+            </div>
+            <div class="col-sm-9">
+                <div id="pTitle">Secondary [2012 - 2014]<br><b>Jawahar Navodaya Vidyalaya, Jaunpur</b>, India</div>
+                <div id="authors">CGPA: 10 </div>
+			</div>
+        </div>
+
 
 
 		<div class="row" id="acads">
