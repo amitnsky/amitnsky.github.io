@@ -16,6 +16,9 @@
     <script type="text/javascript" src="assets/js/hidebib.js"></script>
     <!-- Custom styles for this template -->
     <style>
+    	*{
+    		outline: 0px solid red;
+    	}
         body {
             padding-top: 54px;
             position: relative;
@@ -26,7 +29,12 @@
                 padding-top: 56px;
             }
         }
-
+        .per_image{
+        	height: 185px;
+        	width: 185px;
+        	max-height: 185px;
+        	max-width: 185pxl
+        }
         body,
         td,
         th {
@@ -140,6 +148,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#acads">Academics</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#achie">Achievements</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -162,20 +173,45 @@
             <div class="col-sm-12">
                 <p style="text-align: center;"><a href="mailto:amitkumary828@gmail.com">Email</a> | <a target='_blank' href="https://github.com/amitnsky">Github</a> | <a target="_blank" href="https://www.linkedin.com/in/amit-yadav-703972158/">LinkedIn</a> | <a target="_blank" href="https://twitter.com/amitnsky">Twitter</a></p>
             </div>
-
         </div>
         <!-- Projects -->
         <div class="row" id="projects">
-            <h3>Academic Projects</h3>
+
+
+			<h3>Intern Project</h3>
             <div class="col-sm-12" style="font-size:17px;">
+            	<!-- Project 3-->
                 <div class="project" id="data-interop">
                 	
-                    <span id="paperImg"><img src="assets/udacity.png" width="200px" /><br>Image Source: Udacity</span>
+                    <span id="paperImg"><img src="assets/spab_main.png" width="200px" /><br>Image Source: Project</span>
+
+                    <div id="pTitle">An Android App for Surveying and Housing.</div>
+                    <div id="course">Intern at SPA Bhopal</div>
+                    <div id="shareProject"><a target="_blank" href="https://github.com/amitnsky/snapshots/tree/master/snapshot-spab">snapshot</a>
+                    </div>
+
+
+                    <br><br><br><br>
+                    <div id="data-interop-abs1" class="abstract">
+                        Project Description: <br>
+                        <ul>
+                            <li>Developed fully functional android application for surveying buildings and housing to decide buildings to be demolished or rejuvenated.</li>
+                            <li>Integrated Android SDK of <a target="_blank" href="https://developers.arcgis.com/android/latest/">ArcGIS ( ESRI )</a>.</li>
+                            <li>Features: Survey with just one tap over buildings in Map, Color coding for easily understanding patterns, Easy navigation with GPS, Log in to view analysis of surveying on basis of different factors.</li>
+                        </ul>
+                    </div>
+                </div>
+
+
+            	<h3>Academic Projects</h3>
+            	<!-- Project 2 -->
+                <div class="project" id="data-interop">
+                	
+                    <span id="paperImg"><img src="assets/movies_main.png" width="200px" /><br>Image Source: Project</span>
 
                     <div id="pTitle">An Android App for watching Top Rated and Popular Movies on Smartphones.</div>
                     <div id="course">Android Nanodegree Course Project</div>
-                    <div id="shareProject"><a target="_blank" href="https://github.com/amitnsky/Pop-Movies-Stage1">code</a> | <a href="javascript:toggleblock('data-interop-abs1')">description</a> 
-                    | <a target="_blank" href="https://github.com/amitnsky/Pop-Movies-Stage1">snapshot</a>
+                    <div id="shareProject"><a target="_blank" href="https://github.com/amitnsky/Pop-Movies-Stage1">code</a> | <a target="_blank" href="https://github.com/amitnsky/snapshots/tree/master/snapshot-movies">snapshot</a>
                     </div>
 
 
@@ -190,13 +226,14 @@
                     </div>
                 </div>
 
+                <!-- Project 1 -->
             	<div class="project" id="data-interop" style="margin-top: 30px;">
 
                     <span id="paperImg"><img src="assets/dict.jpg" width="200px" /><br>Image Source: Project</span>
 
                     <div id="pTitle">An Android App for looking English Words on Smartphones (Dictionary).</div>
                     <div id="course">Android Personal Project</div>
-                    <div id="shareProject"><a target="_blank" href="https://github.com/amitnsky/dictionary">code</a> | <a href="javascript:toggleblock('data-interop-abs2')">description</a> | <a target="_blank" href="https://github.com/amitnsky/dictionary">snapshot</a>
+                    <div id="shareProject"><a target="_blank" href="https://github.com/amitnsky/dictionary">code</a> | <a target="_blank" href="https://github.com/amitnsky/snapshots/tree/master/snapshot-dictionary">snapshot</a>
                     </div>
 
                     <br><br><br><br><br><br><br>
@@ -208,51 +245,20 @@
                             <li>Integrated Android Content Provider for maintaining local database of Favourite Words and History.</li>
                         </ul>
                     </div>
-            	</div>
-            </div>
-        </div>
-
-        <div class="row" id="acads">
-            <h3>Academics</h3>
-            <div class="col-sm-12" style="font-size:17px;">
-
-
-                <div class="project" id="btech">
-                    <br>
-                    <span id="paperImg"><img src="assets/degree.png" width="200px" /></span>
-
-                    <div id="pTitle">B.Tech. [2016 - Present]<br><b>National Institute of Technology Bhopal</b>, India</div>
-                    <div id="course"><b>Specialization:</b> Computer Science Engineering</div>
-                    <div id="authors">CGPA: 8.41</div>
-
-                </div><br><br><br><br>
-
-                <div class="project" id="he">
-
-                    <span id="paperImg"><img src="assets/dakshana.png" width="200px" /></span>
-                    <div id="pTitle">Higher Secondary [2014 - 2016]<br><b>Jawahar Navodaya Vidyalaya - Dakshana, Lucknow</b>, India</div>
-                    <div id="course"><b>Specialization:</b> PCM</div>
-                    <div id="authors">Percentage: 92 % </div>
-
-                </div><br><br><br><br>
-
-				<div class="project" id="he">
-
-                    <span id="paperImg"><img src="assets/jnv.jpg" width="200px" /></span>
-                    <div id="pTitle">Secondary [2012 - 2014]<br><b>Jawahar Navodaya Vidyalaya, Jaunpur</b>, India</div>
-                    <div id="authors">CGPA: 10 </div>
 
                 </div>
             </div>
         </div>
-
-
-		<div class="row" id="acads">
-			<h3>Memberships</h3>
+		<div class="row" id="achie">
+			<h3>Achievement & Memberships</h3>
 			<div class="col-sm-12" style="font-size:17px;">
                 <div>
                     <ul>
-                        <li><a target="_blank" href="http://www.manit.ac.in/content/vision/">Vision</a> (Technical Society of MANIT) Core team member, (2018 onwards).</li>
+                        <li><b>Google-Udacity Android Nanodegree Scholarship 2018: </b>Selected among 15000  candidates in selection phase and selected among 1000 candidates after phase 1. </li>
+                        <li><b>Joint Entrance Examination 2016: </b>Secured community rank 1824 among 0.15 million candidates.</li>
+                        <li><b>Dakshana Scholarship: </b>Selected among 1% of all India JNV students for free JEE  coaching. </li>
+						<li><a target="_blank" href="http://www.manit.ac.in/content/vision/"><b>Vision</b></a> (Technical Society of MANIT) Core team member, (2018 onwards).</li>
+
                     </ul>
                 </div>
     		</div>
